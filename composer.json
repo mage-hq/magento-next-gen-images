@@ -1,0 +1,26 @@
+{
+  "name": "magehqm2/module-next-gen-images",
+  "description": "Magento 2 Next Gen Images Extension",
+  "type": "magento2-module",
+  "require": {
+    "magehqm2/module-core": "^1.0.0"
+  },
+  "version": "1.0.0",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Magehqm2",
+      "email": "support@magehq.com",
+      "homepage": "https://www.magehq.com",
+      "role": "Technical Support"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Magehqm2\\NextGenImages\\": ""
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Magehqm2
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the magehq.com license that is
+ * available through the world-wide-web at this URL:
+ * https://magehq.com/license.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   magehqm2
+ * @package    Magehqm2_NextGenImages
+ * @copyright  Copyright (c) 2023 magehqm2 (https://magehq.com/)
+ * @license    https://magehq.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\LayoutInterface">
+        <plugin name="magehqm2_nextgenimages_replace_tags" type="Magehqm2\NextGenImages\Plugin\ReplaceTagsPlugin"/>
+    </type>
+
+    <type name="Magento\Swatches\Helper\Data">
+        <plugin name="magehqm2_nextgenimages_correct_images_in_ajax_response" type="Magehqm2\NextGenImages\Plugin\CorrectImagesInAjaxResponse"/>
+    </type>
+</config>

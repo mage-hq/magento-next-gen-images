@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magehqm2
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the magehq.com license that is
+ * available through the world-wide-web at this URL:
+ * https://magehq.com/license.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   magehqm2
+ * @package    Magehqm2_NextGenImages
+ * @copyright  Copyright (c) 2023 magehqm2 (https://magehq.com/)
+ * @license    https://magehq.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <magehqm2_nextgenimages>
+            <settings>
+                <enabled>1</enabled>
+                <enable_ignore_image>0</enable_ignore_image>
+                <allow_replace_org_image>0</allow_replace_org_image>
+                <ignore_css_class>ignore-webp</ignore_css_class>
+                <debug>0</debug>
+                <log>0</log>
+                <lazy_loading>1</lazy_loading>
+                <convert_images>1</convert_images>
+                <convert_on_save>0</convert_on_save>
+            </settings>
+        </magehqm2_nextgenimages>
+    </default>
+</config>

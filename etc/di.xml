@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magehqm2
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the magehq.com license that is
+ * available through the world-wide-web at this URL:
+ * https://magehq.com/license.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   magehqm2
+ * @package    Magehqm2_NextGenImages
+ * @copyright  Copyright (c) 2023 magehqm2 (https://magehq.com/)
+ * @license    https://magehq.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magehqm2\NextGenImages\Convertor\ConvertorInterface" type="Magehqm2\NextGenImages\Convertor\DummyConvertor"/>
+
+    <type name="Magehqm2\NextGenImages\Logger\Debugger">
+        <arguments>
+            <argument name="logger" xsi:type="object">Magehqm2\NextGenImages\Logger\CustomLogger</argument>
+        </arguments>
+    </type>
+
+    <virtualType type="Magento\Framework\Logger\Monolog" name="Magehqm2\NextGenImages\Logger\CustomLogger">
+        <arguments>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">Magehqm2\NextGenImages\Logger\CustomLogHandler</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType type="Magento\Framework\Logger\Handler\Base" name="Magehqm2\NextGenImages\Logger\CustomLogHandler">
+        <arguments>
+            <argument name="fileName" xsi:type="string">var/log/magehqm2_nextgenimages.log</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magento\Framework\Image">
+        <plugin name="Magehqm2_NextGenImages::convertWebpAfterImageSave" type="Magehqm2\NextGenImages\Plugin\ConvertAfterImageSave"/>
+    </type>
+
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="next-gen-images-test-uri" xsi:type="object">Magehqm2\NextGenImages\Console\Command\TestUriCommand</item>
+                <item name="next-gen-images-convert" xsi:type="object">Magehqm2\NextGenImages\Console\Command\ConvertCommand</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

@@ -1,0 +1,38 @@
+Copyright MageHQ License
+
+This license is issued by MageHQ to govern the use or redistribution of MageHQ products. This is the legal agreement between the customer and MageHQ for extensions and services on MageHQ systems.
+By purchasing products and using services from MageHQ, we understand that you agree to acknowledge that you have read and accepted the terms of this license.
+The license is effective as soon as you purchase our product.
+We reserve the right to make reasonable changes to the terms of this license agreement.
+
+1. License
+
+When a customer buys an extension on MageHQ:
+The Customer will receive 100% open source code.
+The Licence alow the Customer to use a single copy of the Extension on a single production Magento installation and unlimited demo Magento installations. A separate certificate license must be obtained for each production Magento installation. The License Certificate will remain in effect forever or until MageHQ terminates this License due to Customer's failure to comply with Terms and Conditions.
+You can tailor our extension to suit your needs.
+
+2. Description of rights
+
+2.1 Install and use the extension
+For each new extension installation, you are obligated to purchase a new license. one license applies to only one website.
+
+2.2 Distribution
+You are not allowed to distribute or share our extensions to third parties. Any distribution without our permission is considered a violation of this agreement and subject to legal liability, under applicable law.
+
+2.3 Rental
+You may not sell, sublicense, rent or lend any part of the Extension.
+
+2.4 Following the Relevant Laws
+You are responsible for following all the laws that apply to the use of software products. MageHQ software and some parts of it are copyrighted and protected by international laws and agreements on intellectual property rights. Therefore, you must respect the software as copyrighted material. We will take legal action against anyone who violates copyright law. We also reserve the right to cancel the license of any user who has an invalid license.
+
+3. Termination of License
+
+MageHQ may terminate this License at any time if you fail to comply with the terms and conditions of this License. Once the license is cancelled, you need to remove our extension from your site. We are under no obligation to refund you any money spent purchasing the Extension upon termination of this License. In the event this license has been terminated, you knowingly use our extension, so we understand that you agree to pay the cost of damages we incur as a result of your unauthorized use of the extension.
+
+4. Limitation of liability
+
+MageHQ is not responsible for any harm (such as, but not limited to, lost profits, business interruption, or lost information) that results from “Authorized Users” using or not being able to use the MageHQ products, even if MageHQ has been warned about such harm. MageHQ is also not responsible for any legal action that arises from using the Software against the law or for any illegal purpose.
+
+
+The latest License: https://magehq.com/MageHq-License.txt
